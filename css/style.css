@@ -1,0 +1,81 @@
+:root {
+    --dark-color: rgb(65, 172, 199);
+    --light-color: rgb(243, 240, 240);
+}
+
+
+body {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    padding: 2rem;
+    background: var(--dark-color)
+    linear-gradient(to bottom left, var(--dark-color), var(--light-color))
+}
+
+.main {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.instructions {
+    display: block;
+    font-size: 0.8rem;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.ingredients {
+    display: block;
+    font-size: 0.8rem;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.summary {
+    display: block;
+    font-size: 0.8rem;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
